@@ -5,7 +5,8 @@ const API_URL = "http://127.0.0.1:8000";
 
 function App() {
   const [activePage, setActivePage] = useState("self-service");
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userRole, setUserRole] = useState(null);
   const [question, setQuestion] = useState("");
   const [analysis, setAnalysis] = useState(null);
   const [resolution, setResolution] = useState("");
@@ -1631,6 +1632,110 @@ const searchKnowledge = async () => {
     </section>
   );
 
+  if (!isLoggedIn) {
+  return (
+    <div className="login-page">
+      <div className="login-glow login-glow-one"></div>
+      <div className="login-glow login-glow-two"></div>
+
+      <div className="login-card">
+
+        <div className="login-brand">
+          <div className="login-brand-icon">
+            ✦
+          </div>
+
+          <div>
+            <h1>AI ITSM Helpdesk</h1>
+            <p>Intelligent Employee Support Platform</p>
+          </div>
+        </div>
+
+        <div className="login-welcome">
+          <span>WELCOME BACK</span>
+
+          <h2>
+            Intelligent IT support,
+            <br />
+            powered by AI.
+          </h2>
+
+          <p>
+            Sign in to access your enterprise IT support workspace.
+          </p>
+        </div>
+
+        <div className="login-role-title">
+          Continue as
+        </div>
+
+        <div className="login-role-grid">
+
+          <button
+            className="login-role-card"
+            onClick={() => {
+              setUserRole("employee");
+              setIsLoggedIn(true);
+              setActivePage("self-service");
+            }}
+          >
+            <div className="login-role-icon">
+              👤
+            </div>
+
+            <div>
+              <strong>Employee</strong>
+              <span>
+                Get AI-powered IT support
+              </span>
+            </div>
+
+            <b>→</b>
+          </button>
+
+          <button
+            className="login-role-card"
+            onClick={() => {
+              setUserRole("admin");
+              setIsLoggedIn(true);
+              setActivePage("dashboard");
+            }}
+          >
+            <div className="login-role-icon admin">
+              🛠️
+            </div>
+
+            <div>
+              <strong>IT Support</strong>
+              <span>
+                Manage enterprise IT operations
+              </span>
+            </div>
+
+            <b>→</b>
+          </button>
+
+        </div>
+
+        <div className="login-features">
+          <span>✦ AI</span>
+          <span>•</span>
+          <span>RAG</span>
+          <span>•</span>
+          <span>Automation</span>
+          <span>•</span>
+          <span>ServiceNow</span>
+        </div>
+
+        <div className="login-demo">
+          Demo environment · Secure enterprise workspace
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
   return (
     <div className="app">
       <header className="header">
@@ -1643,9 +1748,40 @@ const searchKnowledge = async () => {
           </div>
         </div>
 
-        <div className="status">
-          <span className="status-dot"></span>
-          AI Assistant Online
+        <div className="header-actions">
+  <div className="user-role-badge">
+    <span className="user-role-icon">
+      {userRole === "admin" ? "🛠️" : "👤"}
+    </span>
+
+    <div>
+      <strong>
+        {userRole === "admin" ? "IT Support" : "Employee"}
+      </strong>
+
+      <small>
+        {userRole === "admin"
+          ? "Support Workspace"
+          : "Employee Workspace"}
+      </small>
+    </div>
+  </div>
+
+          <div className="status">
+            <span className="status-dot"></span>
+            AI Assistant Online
+          </div>
+
+          <button
+            className="logout-button"
+            onClick={() => {
+              setIsLoggedIn(false);
+              setUserRole(null);
+              setActivePage("self-service");
+            }}
+          >
+            ↪ Logout
+          </button>
         </div>
       </header>
 
