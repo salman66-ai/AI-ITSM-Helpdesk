@@ -128,8 +128,13 @@ Collections:
 
 ## Project Structure
 
-```text
 AI-ITSM-Helpdesk/
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   └── App.css
+│   ├── package.json
+│   └── ...
 ├── backend/
 │   ├── main.py
 │   ├── database.py
@@ -140,20 +145,20 @@ AI-ITSM-Helpdesk/
 │   ├── automation_service.py
 │   ├── software_service.py
 │   ├── servicenow_mock.py
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── __init__.py
 ├── knowledge_base/
 │   ├── vpn_troubleshooting.txt
 │   ├── password_reset.txt
 │   ├── outlook_sync.txt
 │   ├── wifi_troubleshooting.txt
 │   └── laptop_performance.txt
-├── src/
-│   └── App.jsx
-├── .env
+├── tests/
+│   ├── conftest.py
+│   └── test_ticket_classifier.py
 ├── .gitignore
-├── package.json
-└── README.md
-```
+├── README.md
+└── AI_ITSM_Helpdesk_Hackathon_Presentation.pptx
 
 ## Environment Variables
 
