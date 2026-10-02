@@ -1,0 +1,33 @@
+Wi-Fi Troubleshooting Guide
+
+Title: Corporate Wi-Fi Connectivity Troubleshooting
+
+Issue:
+Employees may experience problems connecting to the corporate Wi-Fi
+network or may experience an unstable wireless connection.
+
+Troubleshooting Steps:
+
+1. Confirm that Wi-Fi is enabled on the laptop.
+2. Verify that the employee is within range of the corporate Wi-Fi network.
+3. Disconnect from the Wi-Fi network and reconnect.
+4. Verify that the correct corporate Wi-Fi network is selected.
+5. Restart the laptop's Wi-Fi adapter if supported.
+6. Restart the laptop.
+7. Check whether other employees are experiencing the same issue.
+8. If the problem continues, escalate to the Network Support team.
+
+Automatable Actions:
+
+- Check Wi-Fi connectivity.
+- Check network availability.
+- Restart the Wi-Fi adapter.
+
+Escalation:
+If the Wi-Fi problem continues after troubleshooting, create an IT
+incident and assign it to Network Support.
+
+Category: Network
+Sub-category: Wi-Fi
+Default Priority: P3
+Assignment Group: Network Support

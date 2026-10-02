@@ -1,0 +1,19 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# FAISS / generated files
+*.index
+
+# Node
+node_modules/
+
+# Build files
+dist/
+
+# IDE
+.vscode/

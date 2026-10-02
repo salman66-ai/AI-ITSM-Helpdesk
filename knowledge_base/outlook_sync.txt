@@ -1,0 +1,33 @@
+Outlook Synchronization Troubleshooting
+
+Title: Outlook Email Synchronization Troubleshooting
+
+Issue:
+Employees may experience problems where Outlook is not synchronizing
+new emails, calendar updates, or other mailbox changes.
+
+Troubleshooting Steps:
+
+1. Verify that the computer has an active internet connection.
+2. Check whether Outlook displays "Working Offline".
+3. If Outlook is offline, select Send/Receive and reconnect.
+4. Close and restart Outlook.
+5. Check whether the mailbox has reached its storage limit.
+6. Verify that the correct corporate account is configured in Outlook.
+7. If synchronization still fails, restart the computer.
+8. If the issue persists, escalate to the Service Desk.
+
+Automatable Actions:
+
+- Check Outlook synchronization status.
+- Restart Outlook.
+- Validate network connectivity.
+
+Escalation:
+If Outlook continues to fail synchronization after troubleshooting,
+create an IT incident and escalate to the Service Desk.
+
+Category: Email
+Sub-category: Outlook Synchronization
+Default Priority: P3
+Assignment Group: Service Desk

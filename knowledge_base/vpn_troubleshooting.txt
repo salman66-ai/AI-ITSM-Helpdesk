@@ -1,0 +1,34 @@
+VPN Troubleshooting Guide
+
+Title: Corporate VPN Authentication Troubleshooting
+
+Issue:
+Employees may experience VPN connection failures due to incorrect credentials,
+expired passwords, VPN client issues, network connectivity problems, or
+authentication service interruptions.
+
+Troubleshooting Steps:
+
+1. Verify that the employee is connected to the internet.
+2. Confirm that the employee is using the correct corporate username.
+3. Check whether the employee password has expired.
+4. Close and restart the VPN client.
+5. Clear the VPN client cache if the client supports cache clearing.
+6. Reconnect to the corporate VPN.
+7. If authentication continues to fail, check the VPN service status.
+8. If the problem persists, escalate the issue to the Network Support team.
+
+Automatable Actions:
+
+- Check VPN service status.
+- Restart VPN client.
+- Clear VPN client cache.
+
+Escalation:
+If authentication continues to fail after troubleshooting,
+create an IT incident and assign it to Network Support.
+
+Category: Network
+Sub-category: VPN
+Default Priority: P2
+Assignment Group: Network Support

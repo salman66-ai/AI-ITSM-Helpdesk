@@ -1,0 +1,33 @@
+Laptop Performance Troubleshooting
+
+Title: Corporate Laptop Performance Troubleshooting
+
+Issue:
+Employees may experience slow laptop performance, applications taking
+too long to respond, or system freezes.
+
+Troubleshooting Steps:
+
+1. Restart the laptop.
+2. Close applications that are not currently required.
+3. Check whether the laptop has sufficient available storage.
+4. Check Task Manager for applications consuming excessive CPU or memory.
+5. Close unnecessary background applications.
+6. Install approved operating system updates if available.
+7. Restart the laptop after completing updates.
+8. If the laptop remains slow, escalate to the Service Desk.
+
+Automatable Actions:
+
+- Check available disk space.
+- Check system resource usage.
+- Restart the laptop.
+
+Escalation:
+If performance problems continue after troubleshooting, create an IT
+incident and assign it to the Service Desk.
+
+Category: Hardware
+Sub-category: Laptop Performance
+Default Priority: P3
+Assignment Group: Service Desk
