@@ -1,8 +1,7 @@
 import json
 import re
 
-
-from backend.llm_service import client, MODEL_NAME
+from llm_service import client, MODEL_NAME
 
 
 def classify_ticket(question: str):
